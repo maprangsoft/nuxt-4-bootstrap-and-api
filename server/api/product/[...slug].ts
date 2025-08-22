@@ -8,6 +8,12 @@ router.get('/list', defineEventHandler(() => {
     }
 }))
 
+router.get('/list2', defineEventHandler(() => {
+    return {
+        message: 'list product2'
+    }
+}))
+
 router.post('/create', defineEventHandler(() => 'create product'))
 
-export default useBase('/api/hello', router.handler)
+export default useBase('/api/product', router.handler)
