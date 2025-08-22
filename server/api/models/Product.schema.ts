@@ -6,16 +6,16 @@ export const Product = defineMongooseModel({
     name: {
       type: String,
       required: true,
-      unique: true,
+      // unique: true,
     },
-    price: {
-      type: Number,
-      required: true,
-    },
-    description: {
-      type: 'string',
-      required: true,
-    }
+    // price: {
+    //   type: Number,
+    //   required: true,
+    // },
+    // description: {
+    //   type: 'string',
+    //   required: true,
+    // }
   },
   options: {
 

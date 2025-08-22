@@ -29,7 +29,14 @@ router.get(
 
 router.post(
   "/create",
-  defineEventHandler(() => "create product")
+  defineEventHandler(async (event) => {
+    const body = await readBody(event);
+    const product = await Product.create(body);
+    return {
+      message: "create product",
+      data: product,
+    };
+  })
 );
 
 export default useBase("/api/products", router.handler);
