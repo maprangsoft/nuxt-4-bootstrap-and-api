@@ -6,5 +6,8 @@ export default defineNuxtConfig({
   css: ["bootstrap/dist/css/bootstrap.min.css"],
   modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
   plugins: ['~/plugins/bootstrap.client'],
-  nitro: {}
+  nitro: {},
+  runtimeConfig: {
+    nuxtMongodbUri: process.env.NUXT_MONGODB_URI,
+  }
 })

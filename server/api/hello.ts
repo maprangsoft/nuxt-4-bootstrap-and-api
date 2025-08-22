@@ -1,5 +1,9 @@
 export default defineEventHandler((event) => {
+
+const runtimeConfig = useRuntimeConfig()
+
     return {
-      hello: 'world'
+      hello: 'world',
+      xxxx: runtimeConfig.nuxtMongodbUri
     }
   })
