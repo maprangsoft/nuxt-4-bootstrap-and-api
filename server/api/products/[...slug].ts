@@ -16,7 +16,11 @@ router.get(
 
 router.get(
   "/:id",
-  defineEventHandler(() => {
+  defineEventHandler(async (event) => {
+    const id = getRouterParam(event, "id");
+
+    const product = await Product.findById(id).lean();
+
     return {
       message: "detail product",
     };
