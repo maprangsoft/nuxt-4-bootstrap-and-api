@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const { $bootstrap } = useNuxtApp();
 
 
@@ -18,7 +18,6 @@ onMounted(() => {
 
 <template>
   <div>
-    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -42,5 +41,31 @@ onMounted(() => {
       <div class="btn btn-danger">Danger</div>
       <div class="btn btn-warning">Warning</div>
     </div>
+
+<div class="container">
+    <div class="row bg-dark text-white">
+      <div class="col-md-2" style="background-color: #f00;">Menu</div>
+      <div class="col-md-10">
+        <div class="row">
+
+          <div class="col-md-6">Section 1</div>
+          <div class="col-md-6">Section 2</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</template> -->
+
+
+<script setup>
+
+</script>
+
+<template>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
