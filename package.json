@@ -15,7 +15,9 @@
     "@nuxt/image": "^1.11.0",
     "@types/bootstrap": "^5.2.10",
     "bootstrap": "^5.3.7",
+    "mongoose": "^8.17.2",
     "nuxt": "^4.0.3",
+    "nuxt-mongoose": "^1.0.6",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   }

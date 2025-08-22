@@ -1,13 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["bootstrap/dist/css/bootstrap.min.css"],
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
-  plugins: ['~/plugins/bootstrap.client'],
+  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/image", "nuxt-mongoose"],
+  plugins: ["~/plugins/bootstrap.client"],
   nitro: {},
   runtimeConfig: {
     nuxtMongodbUri: process.env.NUXT_MONGODB_URI,
-  }
-})
+  },
+  mongoose: {
+    uri: process.env.NUXT_MONGODB_URI,
+  },
+});
