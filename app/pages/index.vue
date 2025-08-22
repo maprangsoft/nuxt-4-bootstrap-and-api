@@ -1,9 +1,7 @@
-<script lang="ts" setup></script>
+<script setup lang="ts">
+const { data } = await useFetch('/api/hello')
+</script>
 
 <template>
-    <div>
-index page
-    </div>
+  <pre>{{ data }}</pre>
 </template>
-
-<style lang="scss" scoped></style>

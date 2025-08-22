@@ -5,5 +5,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["bootstrap/dist/css/bootstrap.min.css"],
   modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
-  plugins: ['~/plugins/bootstrap.client']
+  plugins: ['~/plugins/bootstrap.client'],
+  nitro: {}
 })
