@@ -1,5 +1,5 @@
 import { createRouter, defineEventHandler, useBase } from "h3";
-import { Product } from "../models/Product.schema";
+import { Product } from "../../models/Product.schema";
 
 
 const router = createRouter();
